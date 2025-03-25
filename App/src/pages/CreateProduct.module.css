@@ -1,0 +1,66 @@
+.create_product_container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.create_form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+}
+
+.input,
+.textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.input_error {
+  border: 1px solid red;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.btn_form_submit {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn_form_submit:hover {
+  background-color: green;
+}
