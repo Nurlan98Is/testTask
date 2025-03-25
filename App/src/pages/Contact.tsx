@@ -10,25 +10,21 @@ export const Contact = () => {
       {/* Социальные сети */}
       <div className={styles.socialLinks}>
         <a href="https://vk.com/iskakov98" target="_blank">
-          <img src="src/assets/vkicon.png" alt="VK" className={styles.icon} />
+          <img src="/public/vkicon.png" alt="VK" className={styles.icon} />
         </a>
         <a href="https://www.instagram.com/iskakov98_/" target="_blank">
           <img
-            src="src/assets/instaicon.png"
+            src="/public/instaicon.png"
             alt="Instagram"
             className={styles.icon}
           />
         </a>
         <a href="https://github.com/Nurlan98Is" target="_blank">
-          <img
-            src="src/assets/github.png"
-            alt="GitHub"
-            className={styles.icon}
-          />
+          <img src="/public/github.png" alt="GitHub" className={styles.icon} />
         </a>
         <a href="https://t.me/XnurQ" target="_blank">
           <img
-            src="src/assets/telegram.png"
+            src="/public/telegram.png"
             alt="Telegram"
             className={styles.icon}
           />
@@ -41,7 +37,7 @@ export const Contact = () => {
 
         <div className={styles.emailItem}>
           <img
-            src="src/assets/gmail.png"
+            src="/public/gmail.png"
             alt="Gmail"
             className={styles.emailIcon}
           />
@@ -50,7 +46,7 @@ export const Contact = () => {
 
         <div className={styles.emailItem}>
           <img
-            src="src/assets/email.png"
+            src="/public/email.png"
             alt="Yandex"
             className={styles.emailIcon}
           />
@@ -59,7 +55,7 @@ export const Contact = () => {
 
         <div className={styles.emailItem}>
           <img
-            src="src/assets/outlook.png"
+            src="/public/outlook.png"
             alt="Outlook"
             className={styles.emailIcon}
           />
