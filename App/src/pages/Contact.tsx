@@ -1,5 +1,11 @@
 import styles from "./Contact.module.css";
-
+import vkIcon from "../assets/vkicon.png";
+import instaIcon from "../assets/instaicon.png";
+import gitHubIcon from "../assets/github.png";
+import telegramIcon from "../assets/telegram.png";
+import emailIcon from "../assets/email.png";
+import gmailIcon from "../assets/gmail.png";
+import outlookIcon from "../assets/outlook.png";
 export const Contact = () => {
   return (
     <div className={styles.contactContainer}>
@@ -10,24 +16,16 @@ export const Contact = () => {
       {/* Социальные сети */}
       <div className={styles.socialLinks}>
         <a href="https://vk.com/iskakov98" target="_blank">
-          <img src="/public/vkicon.png" alt="VK" className={styles.icon} />
+          <img src={vkIcon} alt="VK" className={styles.icon} />
         </a>
         <a href="https://www.instagram.com/iskakov98_/" target="_blank">
-          <img
-            src="/public/instaicon.png"
-            alt="Instagram"
-            className={styles.icon}
-          />
+          <img src={instaIcon} alt="Instagram" className={styles.icon} />
         </a>
         <a href="https://github.com/Nurlan98Is" target="_blank">
-          <img src="/public/github.png" alt="GitHub" className={styles.icon} />
+          <img src={gitHubIcon} alt="GitHub" className={styles.icon} />
         </a>
         <a href="https://t.me/XnurQ" target="_blank">
-          <img
-            src="/public/telegram.png"
-            alt="Telegram"
-            className={styles.icon}
-          />
+          <img src={telegramIcon} alt="Telegram" className={styles.icon} />
         </a>
       </div>
 
@@ -36,29 +34,17 @@ export const Contact = () => {
         <p className={styles.subtitle}>Emails:</p>
 
         <div className={styles.emailItem}>
-          <img
-            src="/public/gmail.png"
-            alt="Gmail"
-            className={styles.emailIcon}
-          />
+          <img src={gmailIcon} alt="Gmail" className={styles.emailIcon} />
           <span>Iskakov9821@gmail.com</span>
         </div>
 
         <div className={styles.emailItem}>
-          <img
-            src="/public/email.png"
-            alt="Yandex"
-            className={styles.emailIcon}
-          />
+          <img src={emailIcon} alt="Yandex" className={styles.emailIcon} />
           <span>Iskakov98@yandex.ru</span>
         </div>
 
         <div className={styles.emailItem}>
-          <img
-            src="/public/outlook.png"
-            alt="Outlook"
-            className={styles.emailIcon}
-          />
+          <img src={outlookIcon} alt="Outlook" className={styles.emailIcon} />
           <span>Iskakov9821@outlook.com</span>
         </div>
       </div>

@@ -5,7 +5,6 @@ import { ProductPage } from "./pages/ProductPage";
 import { CreateProducts } from "./pages/CreateProduct";
 import { Contact } from "./pages/Contact";
 
-
 function App() {
   return (
     <Routes>
