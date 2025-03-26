@@ -5,10 +5,12 @@ import { Provider } from "react-redux";
 import App from "./App.tsx";
 import { store } from "./store/store.ts";
 
+const basename = "/testTask";
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <App />
       </BrowserRouter>
     </Provider>
