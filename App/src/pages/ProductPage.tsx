@@ -2,10 +2,13 @@ import { useParams } from "react-router";
 import { useState, useEffect } from "react";
 import styles from "./ProductPage.module.css";
 import { ProductDetails } from "../interface";
+import backIcon from "../assets/backIcon.png";
+import { useNavigate } from "react-router";
 
 export const ProductPage = () => {
   const [meal, setMeal] = useState<ProductDetails[]>([]);
   const { id } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
@@ -15,6 +18,16 @@ export const ProductPage = () => {
 
   return (
     <div>
+      <button
+        className={styles.btn_backPage}
+        onClick={() => navigate("/products")}
+      >
+        <img
+          src={backIcon}
+          alt="back_btn"
+          style={{ width: "50px", height: "50px" }}
+        />
+      </button>
       {meal.map((item) => {
         return (
           <div className={styles.product_container}>
